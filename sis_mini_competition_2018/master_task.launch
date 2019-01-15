@@ -1,0 +1,7 @@
+<launch>
+
+  <!-- TODO -->
+  <include file="$(find object_detection)/launch/open_realsense_and_vis.launch"/>
+  <!-- You need to determine which node you wand to launch in this task -->
+
+</launch>

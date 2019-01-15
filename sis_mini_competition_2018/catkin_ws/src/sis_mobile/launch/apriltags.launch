@@ -1,0 +1,8 @@
+<launch>
+  <include file="$(find apriltags2_ros)/launch/continuous_detection.launch">
+    <arg name="camera_name" value="/sync"/>
+    <arg name="camera_frame" value="pi_camera"/>
+  </include>
+  <!-- Synchronize rectified and camera info -->
+  <node pkg="sis_mobile" type="sync.py" name="sync" clear_params="true"/>
+</launch>
